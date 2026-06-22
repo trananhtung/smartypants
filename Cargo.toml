@@ -1,0 +1,25 @@
+[package]
+name = "smartypants"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Translate plain ASCII punctuation into smart typographic punctuation — curly quotes, em/en-dashes and ellipses. A zero-dependency, no_std port of John Gruber's SmartyPants."
+documentation = "https://docs.rs/smartypants"
+repository = "https://github.com/trananhtung/smartypants"
+homepage = "https://github.com/trananhtung/smartypants"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["smartypants", "typography", "quotes", "punctuation", "markdown"]
+categories = ["text-processing", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
